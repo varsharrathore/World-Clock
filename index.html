@@ -50,16 +50,18 @@
   </head>
   <body class="bg-dark text-white" onload="updateClock()">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">🌍 World Clock</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="ms-auto">
-          <button class="btn btn-outline-light" onclick="toggleDarkMode()">🌙 Toggle Theme</button>
-          </div>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+          <button class="btn btn-outline-light mt-2 mt-lg-0" onclick="toggleDarkMode()">🌙 Toggle Theme</button>
+         </li>
+        </ul>
         </div>
       </div>
     </nav>
